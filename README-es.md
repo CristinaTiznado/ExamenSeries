@@ -47,7 +47,7 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
 1. Clona este repositorio en tu máquina local:
    
    ```bash
-   git clone https://github.com/TuUsuario/ExamenSeries.git
+   git clone https://github.com/CristinaTiznado/ExamenSeries.git
    ```
 3. Navega hasta el directorio del proyecto:
    
