@@ -52,7 +52,6 @@
                             <div class="form-group">
                                 <form:label path="apellido">Apellido</form:label>
                                     <div class="input-error-wrapper">
-                                        <!-- El apellido no necesita icono para no recargar visualmente la fila -->
                                         <form:input type="text" path="apellido" placeholder="Tu apellido"/>
                                         <form:errors path="apellido"/>
                                     </div>

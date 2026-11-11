@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Paleta de colores profesional */
+    /* Paleta de colores */
     --primary: #4F46E5; /* Índigo 600 */
     --primary-hover: #4338CA;
     --danger: #EF4444;
@@ -226,7 +226,7 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 /* 4. TARJETAS CON ANIMACIÓN EN CASCADA */
 .card-serie {
     display: flex;
-    flex-direction: column; /* Esto apila la imagen arriba y el texto abajo */
+    flex-direction: column;
     background-color: var(--surface);
     border-radius: var(--radius);
     overflow: hidden;
@@ -430,7 +430,7 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 .breadcrumb a { color: var(--primary); text-decoration: none; font-weight: 500; }
 .breadcrumb svg { width: 14px; height: 14px; }
 
-/* Badges (Etiquetas) */
+/* Badges */
 .badges-row { display: flex; gap: 10px; margin-bottom: 16px; }
 .badge {
     padding: 4px 10px;
@@ -557,9 +557,9 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 .empty-state h4 { margin: 0 0 8px 0; color: var(--text-main); font-size: 1.1rem; }
 .empty-state p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
 
-/* =========================================
-   COMPLEMENTOS PARA EL DASHBOARD (series.jsp)
-   ========================================= */
+/* ===============================
+   COMPLEMENTOS PARA EL DASHBOARD 
+   =============================== */
 
 /* Banner de Bienvenida (Hero Header) */
 .dashboard-header {
@@ -595,8 +595,8 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 /* Mejoras estructurales en la tarjeta de la serie */
 .card-img-link {
     width: 100%;
-    flex: none; /* Quitamos la restricción de ancho que tenía antes */
-    aspect-ratio: 2 / 3; /* Proporción clásica de póster vertical */
+    flex: none;
+    aspect-ratio: 2 / 3;
     overflow: hidden;
 }
 
@@ -642,7 +642,7 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 .card-meta {
     display: flex;
     gap: 16px;
-    margin-bottom: auto; /* Empuja las acciones (.card-actions) hacia el fondo de la tarjeta */
+    margin-bottom: auto;
 }
 
 .meta-item {
@@ -709,11 +709,11 @@ button, .btn-primary, .btn-danger, .btn-comprar {
 }
 
 .form-group label {
-    margin-top: 0; /* Reseteamos el margen top porque ahora controlamos el espacio con .form-row */
+    margin-top: 0;
 }
 
 @media (max-width: 640px) {
     .form-grid-3 {
-        grid-template-columns: 1fr; /* En celulares, vuelve a ser una sola columna */
+        grid-template-columns: 1fr;
     }
 }

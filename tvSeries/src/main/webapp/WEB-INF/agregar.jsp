@@ -51,7 +51,6 @@
                     </div>
 
                     <!-- Fila 2: Grid de 3 columnas para datos numéricos -->
-                    <!-- Fila 2: Grid de 3 columnas para datos numéricos -->
                     <div class="form-row form-grid-3">
                         <div class="form-group">
                             <form:label path="anio">Año de lanzamiento</form:label>
