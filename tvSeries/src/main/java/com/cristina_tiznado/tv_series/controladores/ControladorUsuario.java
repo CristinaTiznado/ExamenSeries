@@ -17,6 +17,8 @@ import com.cristina_tiznado.tv_series.servicios.ServicioUsuario;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
+import org.springframework.dao.DataAccessException;
+
 @Controller
 public class ControladorUsuario {
 
@@ -26,7 +28,7 @@ public class ControladorUsuario {
     // -------------------------------------
 
     @GetMapping("/")
-    public String inicio(HttpSession sesion, Model modelo){
+    public String inicio(HttpSession sesion, Model modelo) {
 
         sesion.invalidate();
 
@@ -37,21 +39,22 @@ public class ControladorUsuario {
     }
 
     @GetMapping("/logout")
-    public String logout(HttpSession sesion){
-        
+    public String logout(HttpSession sesion) {
+
         sesion.invalidate();
 
         return "redirect:/";
     }
 
     @PostMapping("/login")
-    public String login(HttpSession sesion, @Valid @ModelAttribute("usuarioLogin") UsuarioLogin usuarioLogin, BindingResult validaciones, Model modelo){
-        
+    public String login(HttpSession sesion, @Valid @ModelAttribute("usuarioLogin") UsuarioLogin usuarioLogin,
+            BindingResult validaciones, Model modelo) {
+
         HashMap<String, Object> resultado = this.servicioUsuario.validarLogin(validaciones, usuarioLogin);
         BindingResult validacionesNuevas = (BindingResult) resultado.get("validaciones");
         Usuario usuarioDB = (Usuario) resultado.get("usuario");
 
-        if(validacionesNuevas.hasErrors()){
+        if (validacionesNuevas.hasErrors()) {
             modelo.addAttribute("usuario", new Usuario());
             return "login.jsp";
         }
@@ -63,8 +66,8 @@ public class ControladorUsuario {
     }
 
     @GetMapping("/register")
-    public String mostrarRegistro(HttpSession sesion, Model modelo){
-        
+    public String mostrarRegistro(HttpSession sesion, Model modelo) {
+
         sesion.invalidate();
 
         modelo.addAttribute("usuario", new Usuario());
@@ -72,22 +75,39 @@ public class ControladorUsuario {
     }
 
     @PostMapping("/register")
-    public String register(HttpSession sesion, @Valid @ModelAttribute("usuario") Usuario usuario, BindingResult validaciones, Model modelo){
-        
+    public String register(HttpSession sesion, @Valid @ModelAttribute("usuario") Usuario usuario,
+            BindingResult validaciones, Model modelo) {
+
         validaciones = this.servicioUsuario.validarRegistro(validaciones, usuario);
 
-        if(validaciones.hasErrors()){
+        if (validaciones.hasErrors()) {
             modelo.addAttribute("usuarioLogin", new UsuarioLogin());
             return "register.jsp";
         }
 
-        this.servicioUsuario.crearUsuario(usuario);
+        try {
+            this.servicioUsuario.crearUsuario(usuario);
 
-        Usuario nuevoUsuario = usuario.clone();
-        nuevoUsuario.setPassword("");
+            Usuario nuevoUsuario = usuario.clone();
+            nuevoUsuario.setPassword("");
 
-        sesion.setAttribute("usuario", nuevoUsuario);
+            sesion.setAttribute("usuario", nuevoUsuario);
 
-        return "redirect:/series";
+            return "redirect:/series";
+
+        } catch (DataAccessException e) {
+            usuario.setPassword("");
+            usuario.setConfirmarPassword("");
+
+            modelo.addAttribute("errorGlobal", "Error de conexión: No se pudo crear la cuenta en este momento.");
+            return "register.jsp";
+
+        } catch (Exception e) {
+            usuario.setPassword("");
+            usuario.setConfirmarPassword("");
+
+            modelo.addAttribute("errorGlobal", "Ocurrió un error inesperado. Por favor, inténtalo más tarde.");
+            return "register.jsp";
+        }
     }
 }

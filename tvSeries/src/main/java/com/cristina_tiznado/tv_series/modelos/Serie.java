@@ -11,6 +11,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -30,7 +31,8 @@ public class Serie {
     private String titulo;
 
     @NotNull(message = "Por favor, proporcionar año.")
-    @Min(value = 1, message = "Debe ser un valor positivo.")
+    @Min(value = 1900, message = "El año debe ser mayor a 1900")
+    @Max(value = 2027, message = "El año no puede ser en el futuro")
     private Integer anio;
 
     @NotBlank(message = "Por favor, proporcionar descripción.")
@@ -57,7 +59,8 @@ public class Serie {
     @JoinTable(name = "compras", joinColumns = @JoinColumn(name = "id_serie"), inverseJoinColumns = @JoinColumn(name = "id_usuario"))
     private List<Usuario> compradores;
 
-    public Serie(){}
+    public Serie() {
+    }
 
     public Serie(String titulo, Integer anio, String descripcion, String url, Integer cantidad, Double precio) {
         this.titulo = titulo;
