@@ -68,8 +68,34 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
 
 ## 💡 Uso de la Aplicación
 1. **Inicio y Registro:** Al entrar a la aplicación, verás la pantalla de Login. Si es tu primera vez, dirígete a "Registro" para crear una cuenta (tu contraseña será encriptada).
+
+   ![Login](./assets/login.png)
+
+   ![Registro](./assets/registro.png)
+   
 2. **Explorar Catálogo:** Una vez dentro, verás el panel principal con todas las series subidas por la comunidad.
-3. **Agregar Serie:** Ve a la pestaña "Agregar serie" para publicar un nuevo título, asegurándote de proporcionar una URL de imagen válida y cantidad en stock.
-4. **Comprar Serie:** Haz clic en la imagen de una serie en el catálogo para ver su detalle. Si hay inventario disponible y no la has comprado aún, podrás hacer clic en "Comprar".
-5. **Mis Compras:** Revisa tu biblioteca personal en la sección "Mis compras" para ver todas las series que has adquirido.
-6. **Administrar:** Si tú fuiste el creador de una serie, verás un ícono de edición (✎) que te permitirá actualizar su información o eliminarla del sistema.
+
+   ![Dashboard](./assets/dashboard.png)
+   
+4. **Agregar Serie:** Ve a la pestaña "Agregar serie" para publicar un nuevo título, asegurándote de proporcionar una URL de imagen válida y cantidad en stock.
+
+   ![Añadir Serie](./assets/agregar.png)
+
+   ![Serie Creada](./assets/serie_creada.png)
+   
+6. **Comprar Serie:** Haz clic en la imagen de una serie en el catálogo para ver su detalle. Si hay inventario disponible y no la has comprado aún, podrás hacer clic en "Comprar".
+
+   ![Detalle de Serie](./assets/detalles.png)
+
+   ![Detalle de Serie Comprada](./assets/detalles_compra.png)
+
+   ![Serie Comprada](./assets/serie_comprada.png)
+   
+8. **Mis Compras:** Revisa tu biblioteca personal en la sección "Mis compras" para ver todas las series que has adquirido.
+
+   ![Colección](./assets/coleccion.png)
+   
+10. **Administrar:** Si tú fuiste el creador de una serie, verás un ícono de edición (✎) que te permitirá actualizar su información o eliminarla del sistema.
+
+   ![Editar Serie](./assets/editar.png)
+    
