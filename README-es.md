@@ -1,8 +1,9 @@
-# 📺 TV Series - Sistema de Gestión y Adquisición de Series
-
-> Proyecto desarrollado como examen de certificación para el Bootcamp Full Stack Java impartido por Skillnest y patrocinado por Banco de Chile.
+# 📺 Spring Series Marketplace
+> **Sistema Full Stack de Gestión y Adquisición de Series**
 
 **TV Series** es una aplicación web Full Stack desarrollada en Java utilizando el framework **Spring Boot** bajo el patrón de arquitectura **MVC** (Modelo-Vista-Controlador). Permite a los usuarios registrarse, iniciar sesión, gestionar un catálogo de series de televisión (crear, editar, eliminar) y simular la "compra" de las mismas, manejando inventario y relaciones complejas de bases de datos.
+
+*Proyecto desarrollado como examen de certificación para el Bootcamp Full Stack Java impartido por Skillnest y patrocinado por Banco de Chile.*
 
 ## 🚀 Funcionalidades Principales
 * **Autenticación Segura:** Sistema de registro y login de usuarios con contraseñas encriptadas usando BCrypt.
