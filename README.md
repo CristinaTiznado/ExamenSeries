@@ -54,19 +54,14 @@ The project is configured to connect to a local MySQL database. Before running t
 2. Navigate to the project directory:
    
    ```bash
-   cd ExamenSeries
+   cd tvSeries
    ```
-3. Install dependencies and compile the project using Maven:
-   
-   ```bash
-   mvn clean install
-   ```
-4. Run the Spring Boot application:
+3. Run the Spring Boot application:
    
    ```bash
    mvn spring-boot:run
    ```
-5. Open your web browser and visit: **`http://localhost:8080`**
+4. Open your web browser and visit: **`http://localhost:8080`**
 
 ## 💡 Application Usage
 1. **Home and Registration:** Upon entering the application, you will see the Login screen. If it is your first time, go to "Register" to create an account (your password will be encrypted).
