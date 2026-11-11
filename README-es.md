@@ -96,6 +96,6 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
    ![Colección](./assets/coleccion.png)
    
 10. **Administrar:** Si tú fuiste el creador de una serie, verás un ícono de edición (✎) que te permitirá actualizar su información o eliminarla del sistema.
-
-   ![Editar Serie](./assets/editar.png)
+    
+    ![Editar Serie](./assets/editar.png)
     
