@@ -1,10 +1,11 @@
 🌍 Leer en [Español](README-es.md)*
 
-# 📺 TV Series - Series Management and Acquisition System
-
-> Project developed as a certification exam for the Full Stack Java Bootcamp taught by Skillnest and sponsored by Banco de Chile.
+# 📺 Spring Series Marketplace 
+> **A Full Stack Series Management and Acquisition System**
 
 **TV Series** is a Full Stack web application developed in Java using the **Spring Boot** framework under the **MVC** (Model-View-Controller) architectural pattern. It allows users to register, log in, manage a TV series catalog (create, edit, delete), and simulate the "purchase" of these series, handling inventory and complex database relationships.
+
+*Built as the capstone project for the Full Stack Java Bootcamp by Skillnest & Banco de Chile.*
 
 ## 🚀 Main Features
 - **Secure Authentication:** User registration and login system with passwords encrypted using BCrypt.
