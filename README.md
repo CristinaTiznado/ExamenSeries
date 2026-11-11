@@ -70,8 +70,33 @@ The project is configured to connect to a local MySQL database. Before running t
 
 ## 💡 Application Usage
 1. **Home and Registration:** Upon entering the application, you will see the Login screen. If it is your first time, go to "Register" to create an account (your password will be encrypted).
+   
+   ![Login](./assets/login.png)
+
+   ![Register](./assets/registro.png)
+   
 2. **Explore Catalog:** Once logged in, you will see the main dashboard with all the series uploaded by the community.
+
+   ![Dashboard](./assets/dashboard.png)
+   
 3. **Add Series:** Go to the "Add series" tab to publish a new title, making sure to provide a valid image URL and stock quantity.
+
+   ![Add Serie](./assets/agregar.png)
+
+   ![Serie Creada](./assets/serie_creada.png)
+   
 4. **Buy Series:** Click on a series image in the catalog to see its details. If there is inventory available and you haven't bought it yet, you can click "Buy".
+
+   ![Detail of Serie](./assets/detalles.png)
+
+   ![Detail of Serie Buyed](./assets/detalles_compra.png)
+
+   ![Serie Comprada](./assets/serie_comprada.png)
+   
 5. **My Purchases:** Check your personal library in the "My purchases" section to see all the series you have acquired.
+
+    ![Coleccion](./assets/coleccion.png)
+   
 6. **Manage:** If you were the creator of a series, you will see an edit icon (✎) that will allow you to update its information or remove it from the system.
+
+    ![Editar Serie](./assets/editar.png)
