@@ -34,7 +34,7 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
    ```sql
    CREATE DATABASE tvSeries_db;
    ```
-4. Si tus credenciales de MySQL son distintas a las configuradas por defecto en el archivo `application.properties`, actualízalas:
+3. Si tus credenciales de MySQL son distintas a las configuradas por defecto en el archivo `application.properties`, actualízalas:
    
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/tvSeries_db
@@ -49,22 +49,17 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
    ```bash
    git clone https://github.com/CristinaTiznado/ExamenSeries.git
    ```
-3. Navega hasta el directorio del proyecto:
+2. Navega hasta el directorio del proyecto:
    
    ```bash
-   cd ExamenSeries
+   cd tvSeries
    ```
-5. Instala las dependencias y compila el proyecto usando Maven:
-   
-   ```bash
-   mvn clean install
-   ```
-7. Ejecuta la aplicación de Spring Boot:
+3. Ejecuta la aplicación de Spring Boot:
    
    ```bash
    mvn spring-boot:run
    ```
-9. Abre tu navegador web y visita: **`http://localhost:8080`**
+4. Abre tu navegador web y visita: **`http://localhost:8080`**
 
 ## 💡 Uso de la Aplicación
 1. **Inicio y Registro:** Al entrar a la aplicación, verás la pantalla de Login. Si es tu primera vez, dirígete a "Registro" para crear una cuenta (tu contraseña será encriptada).
@@ -77,13 +72,13 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
 
    ![Dashboard](./assets/dashboard.png)
    
-4. **Agregar Serie:** Ve a la pestaña "Agregar serie" para publicar un nuevo título, asegurándote de proporcionar una URL de imagen válida y cantidad en stock.
+3. **Agregar Serie:** Ve a la pestaña "Agregar serie" para publicar un nuevo título, asegurándote de proporcionar una URL de imagen válida y cantidad en stock.
 
    ![Añadir Serie](./assets/agregar.png)
 
    ![Serie Creada](./assets/serie_creada.png)
    
-6. **Comprar Serie:** Haz clic en la imagen de una serie en el catálogo para ver su detalle. Si hay inventario disponible y no la has comprado aún, podrás hacer clic en "Comprar".
+4. **Comprar Serie:** Haz clic en la imagen de una serie en el catálogo para ver su detalle. Si hay inventario disponible y no la has comprado aún, podrás hacer clic en "Comprar".
 
    ![Detalle de Serie](./assets/detalles.png)
 
@@ -91,11 +86,11 @@ El proyecto está configurado para conectarse a una base de datos MySQL local. A
 
    ![Serie Comprada](./assets/serie_comprada.png)
    
-8. **Mis Compras:** Revisa tu biblioteca personal en la sección "Mis compras" para ver todas las series que has adquirido.
+5. **Mis Compras:** Revisa tu biblioteca personal en la sección "Mis compras" para ver todas las series que has adquirido.
 
    ![Colección](./assets/coleccion.png)
    
-10. **Administrar:** Si tú fuiste el creador de una serie, verás un ícono de edición (✎) que te permitirá actualizar su información o eliminarla del sistema.
+6. **Administrar:** Si tú fuiste el creador de una serie, verás un ícono de edición (✎) que te permitirá actualizar su información o eliminarla del sistema.
     
     ![Editar Serie](./assets/editar.png)
     
