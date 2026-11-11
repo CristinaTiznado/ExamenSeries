@@ -83,7 +83,7 @@ The project is configured to connect to a local MySQL database. Before running t
 
    ![Add Serie](./assets/agregar.png)
 
-   ![Serie Creada](./assets/serie_creada.png)
+   ![Serie Added](./assets/serie_creada.png)
    
 4. **Buy Series:** Click on a series image in the catalog to see its details. If there is inventory available and you haven't bought it yet, you can click "Buy".
 
@@ -91,7 +91,7 @@ The project is configured to connect to a local MySQL database. Before running t
 
    ![Detail of Serie Buyed](./assets/detalles_compra.png)
 
-   ![Serie Comprada](./assets/serie_comprada.png)
+   ![Serie Buyed](./assets/serie_comprada.png)
    
 5. **My Purchases:** Check your personal library in the "My purchases" section to see all the series you have acquired.
 
@@ -99,4 +99,4 @@ The project is configured to connect to a local MySQL database. Before running t
    
 6. **Manage:** If you were the creator of a series, you will see an edit icon (✎) that will allow you to update its information or remove it from the system.
 
-    ![Editar Serie](./assets/editar.png)
+    ![Edit Serie](./assets/editar.png)
