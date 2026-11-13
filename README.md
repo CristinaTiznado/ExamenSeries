@@ -50,7 +50,7 @@ The project is configured to connect to a local MySQL database. Before running t
 1. Clone this repository to your local machine:
    
    ```bash
-   git clone https://github.com/CristinaTiznado/ExamenSeries.git
+   git clone https://github.com/CristinaTiznado/spring-series-marketplace.git
    ```
 2. Navigate to the project directory:
    
